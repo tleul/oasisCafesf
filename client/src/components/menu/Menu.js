@@ -9,22 +9,9 @@ import Pasta from './Pasta';
 
 const Menu = () => {
 	const [menuType, setMenutype] = useState({
-		menu: 'all',
+		menu: 'enteries',
 	});
-	const all = () => {
-		if (menuType.menu !== 'all') {
-			setMenutype({ menu: 'all' });
-		} else if (menuType.menu === 'all') {
-			return;
-		}
-	};
-	const dinner = () => {
-		if (menuType.menu !== 'dinner') {
-			setMenutype({ menu: 'dinner' });
-		} else if (menuType.menu === 'dinner') {
-			return;
-		}
-	};
+
 	const drinks = () => {
 		if (menuType.menu !== 'drinks') {
 			setMenutype({ menu: 'drinks' });
@@ -32,10 +19,10 @@ const Menu = () => {
 			return;
 		}
 	};
-	const lunch = () => {
-		if (menuType.menu !== 'lunch') {
-			setMenutype({ menu: 'lunch' });
-		} else if (menuType.menu === 'lunch') {
+	const enteries = () => {
+		if (menuType.menu !== 'enteries') {
+			setMenutype({ menu: 'enteries' });
+		} else if (menuType.menu === 'enteries') {
 			return;
 		}
 	};
@@ -65,7 +52,7 @@ const Menu = () => {
 								<br /> <br /> <br />
 								<h2>
 									Explore Our{' '}
-									{menuType.menu === 'all'
+									{menuType.menu === 'enteries'
 										? ''
 										: menuType.menu}{' '}
 									Menu
@@ -82,31 +69,24 @@ const Menu = () => {
 						<div className='col-lg-12'>
 							<div className='special-menu text-center'>
 								<div className='button-group filter-button-group'>
-									<button onClick={(e) => all(e)}>All</button>
 									<button onClick={(e) => drinks(e)}>
 										Drinks
 									</button>
-									<button onClick={(e) => lunch(e)}>
-										Lunch
+									<button onClick={(e) => enteries(e)}>
+										Entries
 									</button>
-									<button onClick={(e) => dinner(e)}>
-										Dinner
-									</button>
+
 									<button onClick={(e) => pasta(e)}>
 										Pre-Pasta-Rous
 									</button>
 								</div>
-								{menuType.menu === 'lunch' ||
+								{menuType.menu === 'enteries' ||
 								menuType.menu === 'starters' ? (
 									<Fragment>
 										<br />
 
 										<br />
 										<div className='button-group filter-button-group'>
-											<button
-												onClick={(e) => starters(e)}>
-												Starters
-											</button>
 											<button
 												onClick={(e) => starters(e)}>
 												Starters
@@ -124,15 +104,6 @@ const Menu = () => {
 						</div>
 					</div>
 					<div className='row special-list'>
-						{menuType.menu === 'all' ? (
-							<Fragment>
-								<Drinks />
-								<Lunch />
-								<Dinner />
-							</Fragment>
-						) : (
-							''
-						)}
 						{menuType.menu === 'drinks' ? (
 							<Fragment>
 								<Drinks />
@@ -154,7 +125,7 @@ const Menu = () => {
 						) : (
 							''
 						)}
-						{menuType.menu === 'lunch' ? (
+						{menuType.menu === 'enteries' ? (
 							<Fragment>
 								<Lunch />
 							</Fragment>
