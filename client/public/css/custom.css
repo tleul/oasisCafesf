@@ -1,0 +1,7 @@
+/** ADD YOUR AWESOME CODES HERE **/
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+.why-text {
+	text-align: center;
+	font-family: 'Source Code Pro', monospace;
+	opacity: 0.9;
+}
