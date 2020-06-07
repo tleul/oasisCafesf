@@ -9,7 +9,7 @@ const Lunch = () => {
 					<img
 						src='img/lunch/tibs.jpg'
 						className='img-fluid'
-						alt='Image'
+						alt='imagesDinner'
 					/>
 					<div className='why-text'>
 						<h4>
@@ -27,7 +27,7 @@ const Lunch = () => {
 					<img
 						src='img/lunch/chickenTips.jpg'
 						className='img-fluid'
-						alt='Image'
+						alt='imagesDinner'
 					/>
 
 					<div className='why-text'>
@@ -46,7 +46,7 @@ const Lunch = () => {
 					<img
 						src='img/lunch/goredgored.jpg'
 						className='img-fluid'
-						alt='Image'
+						alt='imagesDinner'
 					/>
 
 					<div className='why-text'>
@@ -65,7 +65,7 @@ const Lunch = () => {
 					<img
 						src='img/lunch/alichaBeg.jpg'
 						className='img-fluid'
-						alt='Image'
+						alt='imagesDinner'
 					/>
 
 					<div className='why-text'>
@@ -84,7 +84,7 @@ const Lunch = () => {
 					<img
 						src='img/lunch/kitfo.jpg'
 						className='img-fluid'
-						alt='Image'
+						alt='imagesDinner'
 					/>
 
 					<div className='why-text'>
@@ -103,7 +103,7 @@ const Lunch = () => {
 					<img
 						src='img/lunch/asatibs.jpg'
 						className='img-fluid'
-						alt='Image'
+						alt='imagesDinner'
 					/>
 
 					<div className='why-text'>
@@ -123,7 +123,7 @@ const Lunch = () => {
 					<img
 						src='img/lunch/chickenMashroom.jpg'
 						className='img-fluid'
-						alt='Image'
+						alt='imagesDinner'
 					/>
 
 					<div className='why-text'>

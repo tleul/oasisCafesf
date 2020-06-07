@@ -1,7 +1,7 @@
 import React from 'react';
 
 import SmartSlider from 'react-smart-slider';
-import { withRouter } from 'react-router-dom';
+
 const DummyCaption = ({ caption }) => (
 	<div
 		style={{

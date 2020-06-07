@@ -1,11 +1,6 @@
 import React, { Fragment } from 'react';
 import Navbar from './components/layout/Navbar';
-import {
-	BrowserRouter as Router,
-	Route,
-	Switch,
-	NavLink,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Menu from './components/menu/Menu';
 import Home from './components/layout/Home';
 import Footer from './components/layout/Footer';
@@ -17,12 +12,12 @@ class App extends React.Component {
 		return (
 			<Router>
 				<Navbar />
-				<Route path='/' component={Home} />
+				<Route exact path='/' component={Home} />
 				<Fragment>
 					<Switch>
-						<Route path='/menu' component={Menu} />
-						<Route path='/contact' component={Contact} />
-						<Route path='/gallery' component={Gallery} />
+						<Route exact path='/menu' component={Menu} />
+						<Route exact path='/contact' component={Contact} />
+						<Route exact path='/gallery' component={Gallery} />
 					</Switch>
 				</Fragment>
 				<Footer />

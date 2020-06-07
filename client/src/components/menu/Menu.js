@@ -3,7 +3,7 @@ import Drinks from './Drinks';
 
 import Lunch from './Lunch';
 import Dinner from './Dinner';
-import Footer from '../layout/Footer';
+
 import Starters from './Starters';
 
 const Menu = () => {
@@ -56,7 +56,7 @@ const Menu = () => {
 								<br /> <br /> <br />
 								<h2>
 									Explore Our{' '}
-									{menuType.menu == 'all'
+									{menuType.menu === 'all'
 										? ''
 										: menuType.menu}{' '}
 									Menu
@@ -87,8 +87,8 @@ const Menu = () => {
 										New Menu
 									</button>
 								</div>
-								{menuType.menu == 'lunch' ||
-								menuType.menu == 'starters' ? (
+								{menuType.menu === 'lunch' ||
+								menuType.menu === 'starters' ? (
 									<Fragment>
 										<br />
 
@@ -115,7 +115,7 @@ const Menu = () => {
 						</div>
 					</div>
 					<div className='row special-list'>
-						{menuType.menu == 'all' ? (
+						{menuType.menu === 'all' ? (
 							<Fragment>
 								<Drinks />
 								<Lunch />
@@ -124,28 +124,28 @@ const Menu = () => {
 						) : (
 							''
 						)}
-						{menuType.menu == 'drinks' ? (
+						{menuType.menu === 'drinks' ? (
 							<Fragment>
 								<Drinks />
 							</Fragment>
 						) : (
 							''
 						)}
-						{menuType.menu == 'dinner' ? (
+						{menuType.menu === 'dinner' ? (
 							<Fragment>
 								<Dinner />
 							</Fragment>
 						) : (
 							''
 						)}
-						{menuType.menu == 'lunch' ? (
+						{menuType.menu === 'lunch' ? (
 							<Fragment>
 								<Lunch />
 							</Fragment>
 						) : (
 							''
 						)}
-						{menuType.menu == 'starters' ? (
+						{menuType.menu === 'starters' ? (
 							<Fragment>
 								<Starters />
 							</Fragment>

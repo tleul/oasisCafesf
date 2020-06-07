@@ -9,7 +9,7 @@ const Starters = () => {
 					<img
 						src='https://via.placeholder.com/800X480'
 						className='img-fluid'
-						alt='Image'
+						alt='starterImages'
 					/>
 
 					<div className='why-text'>
@@ -29,7 +29,7 @@ const Starters = () => {
 					<img
 						src='img/starters/samusa.jpg'
 						className='img-fluid'
-						alt='Image'
+						alt='starterImages'
 					/>
 
 					<div className='why-text'>
@@ -48,7 +48,7 @@ const Starters = () => {
 					<img
 						src='img/starters/timatimfti.jpg'
 						className='img-fluid'
-						alt='Image'
+						alt='starterImages'
 					/>
 
 					<div className='why-text'>
