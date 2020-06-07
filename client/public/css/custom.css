@@ -5,3 +5,19 @@
 	font-family: 'Source Code Pro', monospace;
 	opacity: 0.9;
 }
+.button-group {
+	background: red;
+}
+.button-group button {
+	transition-duration: 0.5s;
+}
+
+.button-group button:hover {
+	background-color: #805a3f; /* Green */
+	color: white;
+}
+.button-group button:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(10px);
+}

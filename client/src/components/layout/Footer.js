@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 	return (
@@ -45,10 +46,10 @@ const Footer = () => {
 								901 Divisadero Street San Francisco, CA 94115
 							</p>
 							<p className='lead'>
-								<a href='#'>(415) 474-4900</a>
+								<Link to='#'>(415) 474-4900</Link>
 							</p>
 							<p>
-								<a href='#'> info@admin.com</a>
+								<Link to='#'> info@admin.com</Link>
 							</p>
 						</div>
 						<div className='col-lg-3 col-md-6'>
@@ -70,39 +71,39 @@ const Footer = () => {
 							</div>
 							<ul className='list-inline f-social'>
 								<li className='list-inline-item'>
-									<a href='#'>
+									<Link to='#'>
 										<i
 											className='fa fa-facebook'
 											aria-hidden='true'></i>
-									</a>
+									</Link>
 								</li>
 								<li className='list-inline-item'>
-									<a href='#'>
+									<Link to='#'>
 										<i
 											className='fa fa-twitter'
 											aria-hidden='true'></i>
-									</a>
+									</Link>
 								</li>
 								<li className='list-inline-item'>
-									<a href='#'>
+									<Link to='#'>
 										<i
 											className='fa fa-linkedin'
 											aria-hidden='true'></i>
-									</a>
+									</Link>
 								</li>
 								<li className='list-inline-item'>
-									<a href='#'>
+									<Link to='#'>
 										<i
 											className='fa fa-google-plus'
 											aria-hidden='true'></i>
-									</a>
+									</Link>
 								</li>
 								<li className='list-inline-item'>
-									<a href='#'>
+									<Link to='#'>
 										<i
 											className='fa fa-instagram'
 											aria-hidden='true'></i>
-									</a>
+									</Link>
 								</li>
 							</ul>
 						</div>
@@ -115,10 +116,10 @@ const Footer = () => {
 							<div className='col-lg-12'>
 								<p className='company-name'>
 									All Rights Reserved. &copy; 2020{' '}
-									<a href='#'>Oasis Cafe</a> Design By :
-									<a href='https://html.design/'>
+									<Link to='/'>Oasis Cafe</Link> Design By :
+									<Link to='/developer'>
 										LeulT|contact developer
-									</a>
+									</Link>
 								</p>
 							</div>
 						</div>
@@ -126,13 +127,13 @@ const Footer = () => {
 				</div>
 			</footer>
 
-			<a
-				href='#'
+			<Link
+				to='#'
 				id='back-to-top'
 				title='Back to top'
 				style={{ display: 'none' }}>
 				&uarr;
-			</a>
+			</Link>
 		</Fragment>
 	);
 };

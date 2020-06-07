@@ -6,9 +6,9 @@ const Dinner = () => {
 			<div className='col-lg-4 col-md-6 special-grid dinner'>
 				<div className='gallery-single fix'>
 					<img
-						src='images/img-07.jpg'
+						src='dinnerImages/img-07.jpg'
 						className='img-fluid'
-						alt='Image'
+						alt='dinnerImage'
 					/>
 					<div className='why-text'>
 						<h4>Special Dinner 1</h4>
@@ -20,9 +20,9 @@ const Dinner = () => {
 			<div className='col-lg-4 col-md-6 special-grid dinner'>
 				<div className='gallery-single fix'>
 					<img
-						src='images/img-08.jpg'
+						src='dinnerImages/img-08.jpg'
 						className='img-fluid'
-						alt='Image'
+						alt='dinnerImage'
 					/>
 					<div className='why-text'>
 						<h4>Special Dinner 2</h4>
@@ -34,9 +34,9 @@ const Dinner = () => {
 			<div className='col-lg-4 col-md-6 special-grid dinner'>
 				<div className='gallery-single fix'>
 					<img
-						src='images/img-09.jpg'
+						src='dinnerImages/img-09.jpg'
 						className='img-fluid'
-						alt='Image'
+						alt='dinnerImage'
 					/>
 					<div className='why-text'>
 						<h4>Special Dinner 3</h4>

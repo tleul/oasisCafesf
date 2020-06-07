@@ -11,7 +11,7 @@ const Drinks = () => {
 					<img
 						src='img/drinks/dripcoffee.jpg'
 						className='img-fluid'
-						alt='Image'
+						alt='drinks'
 					/>
 					<div className='why-text'>
 						<h5 style={{ color: 'Black' }}>
@@ -32,7 +32,7 @@ const Drinks = () => {
 					<img
 						src='img/drinks/espresso.jpg'
 						className='img-fluid'
-						alt='Image'
+						alt='drinks'
 					/>
 					<div className='why-text'>
 						<h5 style={{ color: 'Black' }}>
@@ -52,7 +52,7 @@ const Drinks = () => {
 					<img
 						src='img/drinks/hotchocolate.jpg'
 						className='img-fluid'
-						alt='Image'
+						alt='drinks'
 					/>
 					<div className='why-text'>
 						<h5 style={{ color: 'Black' }}>
@@ -72,7 +72,7 @@ const Drinks = () => {
 					<img
 						src='img/drinks/hotchocolate.jpg'
 						className='img-fluid'
-						alt='Image'
+						alt='drinks'
 					/>
 					<div className='why-text'>
 						<h5 style={{ color: 'Black' }}>
@@ -92,7 +92,7 @@ const Drinks = () => {
 					<img
 						src='img/drinks/americano (2).jpg'
 						className='img-fluid'
-						alt='Image'
+						alt='drinks'
 					/>
 					<div className='why-text'>
 						<h5 style={{ color: 'Black' }}>
@@ -112,7 +112,7 @@ const Drinks = () => {
 					<img
 						src='img/drinks/cappcino.jpg'
 						className='img-fluid'
-						alt='Image'
+						alt='drinks'
 					/>
 					<div className='why-text'>
 						<h5 style={{ color: 'Black' }}>
@@ -132,7 +132,7 @@ const Drinks = () => {
 					<img
 						src='img/drinks/macchiato.jpg'
 						className='img-fluid'
-						alt='Image'
+						alt='drinks'
 					/>
 					<div className='why-text'>
 						<h5 style={{ color: 'Black' }}>
@@ -152,7 +152,7 @@ const Drinks = () => {
 					<img
 						src='img/drinks/icecoffee.jpg'
 						className='img-fluid'
-						alt='Image'
+						alt='drinks'
 					/>
 					<div className='why-text'>
 						<h5 style={{ color: 'Black' }}>
@@ -172,7 +172,7 @@ const Drinks = () => {
 					<img
 						src='img/drinks/icelatte.jpg'
 						className='img-fluid'
-						alt='Image'
+						alt='drinks'
 					/>
 					<div className='why-text'>
 						<h5 style={{ color: 'Black' }}>
@@ -191,7 +191,7 @@ const Drinks = () => {
 					<img
 						src='img/drinks/teabags.jpeg'
 						className='img-fluid'
-						alt='Image'
+						alt='drinks'
 					/>
 					<div className='why-text'>
 						<h5 style={{ color: 'Black' }}>
@@ -209,7 +209,7 @@ const Drinks = () => {
 					<img
 						src='img/drinks/icetea.jpg'
 						className='img-fluid'
-						alt='Image'
+						alt='drinks'
 					/>
 					<div className='why-text'>
 						<h5 style={{ color: 'Black' }}>
@@ -226,7 +226,7 @@ const Drinks = () => {
 					<img
 						src='img/drinks/tealoose.jpg'
 						className='img-fluid'
-						alt='Image'
+						alt='drinks'
 					/>
 					<div className='why-text'>
 						<h5 style={{ color: 'Black' }}>

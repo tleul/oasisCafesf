@@ -181,11 +181,11 @@ button:focus {
 }
 
 .top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover {
-	background: #d0a772;
+	background: #805a3f;
 	color: #ffffff;
 }
 .top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link {
-	background: #d0a772;
+	background: #805a3f;
 	color: #ffffff;
 	border-radius: 4px;
 }
@@ -196,11 +196,11 @@ button:focus {
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu a.dropdown-item:hover {
-	background: #d0a772;
+	background: #805a3f;
 	color: #ffffff;
 }
 .navbar-light .navbar-toggler:hover {
-	background: #cfa671;
+	background: #805a3f;
 }
 
 /*------------------------------------------------------------------

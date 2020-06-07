@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import Footer from './Footer';
+
 import ItemSlider from './Slider';
 import About from '../info/About';
 import Qoute from '../info/Qt';
