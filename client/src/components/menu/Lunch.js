@@ -31,7 +31,7 @@ const Lunch = () => {
 					/>
 
 					<div className='why-text'>
-						<h4>
+						<h4 style={{ fontSize: 22 }}>
 							Tenderized, boneless chicken sautéed in New Entrea's
 							own spices cooked with vegetable oil (or clarified
 							butter), onion, tomatoes, and garlic
@@ -88,7 +88,7 @@ const Lunch = () => {
 					/>
 
 					<div className='why-text'>
-						<h4>
+						<h4 style={{ fontSize: 22 }}>
 							Tartat of finely chopped lean flank steak, mixed
 							with seasoned clarified butter accompanied with
 							home-made yogurt and mitmita.

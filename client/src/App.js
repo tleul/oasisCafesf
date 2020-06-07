@@ -6,6 +6,7 @@ import Home from './components/layout/Home';
 import Footer from './components/layout/Footer';
 import Contact from './components/info/Contact';
 import Gallery from './components/Gallery';
+import About from './components/info/About';
 
 class App extends React.Component {
 	render() {
@@ -18,6 +19,7 @@ class App extends React.Component {
 						<Route exact path='/menu' component={Menu} />
 						<Route exact path='/contact' component={Contact} />
 						<Route exact path='/gallery' component={Gallery} />
+						<Route exact path='/about' component={About} />
 					</Switch>
 				</Fragment>
 				<Footer />

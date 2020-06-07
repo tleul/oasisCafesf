@@ -13,7 +13,7 @@ const Starters = () => {
 					/>
 
 					<div className='why-text'>
-						<h4>
+						<h4 style={{ fontSize: 22 }}>
 							Crushed fava beans, garnished with fresh onions,
 							jalapeños, sour cream, fresh tomatoes, serves with
 							fresh regular bread
@@ -33,7 +33,7 @@ const Starters = () => {
 					/>
 
 					<div className='why-text'>
-						<h4>
+						<h4 style={{ fontSize: 22 }}>
 							Prime Ground Beef, or Lentil Choice of beef or
 							lentil wrapped in an eggroll shell and prepared with
 							onions and spices Add side salad for $4 SAMOUSA
@@ -46,7 +46,7 @@ const Starters = () => {
 				<h1>TIMATIM FITFIT </h1>
 				<div className='gallery-single fix'>
 					<img
-						src='img/starters/timatimfti.jpg'
+						src='img/lunch/timatimfti.jpg'
 						className='img-fluid'
 						alt='starterImages'
 					/>

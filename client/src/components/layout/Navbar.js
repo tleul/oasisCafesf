@@ -39,19 +39,12 @@ const Navbar = () => {
 									</Link>
 								</li>
 								<li className='nav-item'>
-									<Link className='nav-link' to='/setup'>
-										Setup
+									<Link className='nav-link' to='/about'>
+										About
 									</Link>
 								</li>
-								<li className='nav-item dropdown'>
-									<Link
-										className='nav-link dropdown-toggle'
-										to='#'
-										id='dropdown-a'
-										data-toggle='dropdown'>
-										Pages
-									</Link>
-									<div
+
+								{/* <div
 										className='dropdown-menu'
 										aria-labelledby='dropdown-a'>
 										<Link
@@ -69,9 +62,9 @@ const Navbar = () => {
 											to='gallery.html'>
 											Gallery
 										</Link>
-									</div>
-								</li>
-								<li className='nav-item dropdown'>
+									</div> */}
+
+								{/* <li className='nav-item dropdown'>
 									<Link
 										className='nav-link dropdown-toggle'
 										to='#'
@@ -93,7 +86,7 @@ const Navbar = () => {
 											blog Single
 										</Link>
 									</div>
-								</li>
+								</li> */}
 								<li className='nav-item'>
 									<Link className='nav-link' to='/contact'>
 										Contact

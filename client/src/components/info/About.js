@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom';
 const About = () => {
 	return (
 		<Fragment>
+			<br />
+			<b>
+				<br />
+			</b>
+
 			<div className='about-section-box'>
 				<div className='container'>
 					<div className='row'>

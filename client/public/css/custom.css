@@ -5,9 +5,7 @@
 	font-family: 'Source Code Pro', monospace;
 	opacity: 0.9;
 }
-.button-group {
-	background: red;
-}
+
 .button-group button {
 	transition-duration: 0.5s;
 }

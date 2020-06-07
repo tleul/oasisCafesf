@@ -5,6 +5,7 @@ import Lunch from './Lunch';
 import Dinner from './Dinner';
 
 import Starters from './Starters';
+import Pasta from './Pasta';
 
 const Menu = () => {
 	const [menuType, setMenutype] = useState({
@@ -38,6 +39,14 @@ const Menu = () => {
 			return;
 		}
 	};
+	const pasta = () => {
+		if (menuType.menu !== 'pasta') {
+			setMenutype({ menu: 'pasta' });
+		} else if (menuType.menu === 'pasta') {
+			return;
+		}
+	};
+
 	const starters = () => {
 		if (menuType.menu !== 'starters') {
 			setMenutype({ menu: 'starters' });
@@ -83,8 +92,8 @@ const Menu = () => {
 									<button onClick={(e) => dinner(e)}>
 										Dinner
 									</button>
-									<button onClick={(e) => drinks(e)}>
-										New Menu
+									<button onClick={(e) => pasta(e)}>
+										Pre-Pasta-Rous
 									</button>
 								</div>
 								{menuType.menu === 'lunch' ||
@@ -127,6 +136,13 @@ const Menu = () => {
 						{menuType.menu === 'drinks' ? (
 							<Fragment>
 								<Drinks />
+							</Fragment>
+						) : (
+							''
+						)}
+						{menuType.menu === 'pasta' ? (
+							<Fragment>
+								<Pasta />
 							</Fragment>
 						) : (
 							''
