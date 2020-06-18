@@ -11,7 +11,10 @@ const Menu = () => {
 	const [menuType, setMenutype] = useState({
 		menu: 'enteries',
 	});
-
+	const [info, toggleInfo] = useState(true);
+	setTimeout(() => {
+		toggleInfo(false);
+	}, 5000);
 	const drinks = () => {
 		if (menuType.menu !== 'drinks') {
 			setMenutype({ menu: 'drinks' });
@@ -62,6 +65,19 @@ const Menu = () => {
 									Ertrian and Amercan food Menu <br />
 									Coffee Best In town
 								</p>
+								{info && (
+									<div class='info'>
+										<i
+											style={{
+												color: 'red',
+												fontSize: 20,
+											}}>
+											Please hover over or press on the
+											meal image for description ♥ Thank
+											You ♥
+										</i>
+									</div>
+								)}
 							</div>
 						</div>
 					</div>

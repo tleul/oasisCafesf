@@ -8,8 +8,9 @@ const DummyCaption = ({ caption }) => (
 			position: 'absolute',
 			right: 100,
 			top: 250,
-			fontSize: 38,
-			color: 'white',
+
+			fontSize: 50,
+			color: '#88A550 ',
 			padding: 55,
 		}}>
 		{caption}
@@ -46,7 +47,7 @@ const ItemSlider = () => {
 		},
 	];
 	return (
-		<div className='slide'>
+		<div style={{}} className='slide'>
 			<SmartSlider
 				autoSlide={true}
 				slides={slidesArray}
