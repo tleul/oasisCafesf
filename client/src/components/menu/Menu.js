@@ -22,6 +22,13 @@ const Menu = () => {
 			return;
 		}
 	};
+	const american = () => {
+		if (menuType.menu !== 'americans') {
+			setMenutype({ menu: 'americans' });
+		} else if (menuType.menu === 'americans') {
+			return;
+		}
+	};
 	const enteries = () => {
 		if (menuType.menu !== 'enteries') {
 			setMenutype({ menu: 'enteries' });
@@ -95,6 +102,9 @@ const Menu = () => {
 									<button onClick={(e) => pasta(e)}>
 										Pre-Pasta-Rous
 									</button>
+									<button onClick={(e) => american(e)}>
+										American Menu
+									</button>
 								</div>
 								{menuType.menu === 'enteries' ||
 								menuType.menu === 'starters' ? (
@@ -151,6 +161,13 @@ const Menu = () => {
 						{menuType.menu === 'starters' ? (
 							<Fragment>
 								<Starters />
+							</Fragment>
+						) : (
+							''
+						)}
+						{menuType.menu === 'americans' ? (
+							<Fragment>
+								<h1>Heloo</h1>
 							</Fragment>
 						) : (
 							''
