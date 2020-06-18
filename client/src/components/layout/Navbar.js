@@ -9,8 +9,18 @@ const Navbar = () => {
 					<div className='container'>
 						<Link className='navbar-brand' to='/'>
 							<img
+								style={{ height: 15, width: 30 }}
+								src='img/ehiopian-flag.jpg'
+								alt=''
+							/>
+							<img
 								style={{ height: 60, width: 100 }}
 								src='img/logo192.png'
+								alt=''
+							/>
+							<img
+								style={{ height: 15, width: 30 }}
+								src='img/eritrea-flag.jpg'
 								alt=''
 							/>
 						</Link>

@@ -19,3 +19,16 @@
 	box-shadow: 0 5px #666;
 	transform: translateY(10px);
 }
+.oasis-top {
+	background-color: #db4437;
+	font-size: 2rem;
+	text-align: center;
+	width: auto;
+	margin-top: 3rem;
+}
+.oasis-top .flag {
+	width: 5rem;
+}
+.oasis-top h1 {
+	font-size: 2rem;
+}

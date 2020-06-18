@@ -46,7 +46,7 @@ const ItemSlider = () => {
 		},
 	];
 	return (
-		<div className='Slide'>
+		<div className='slide'>
 			<SmartSlider
 				autoSlide={true}
 				slides={slidesArray}
