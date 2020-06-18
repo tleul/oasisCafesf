@@ -14,7 +14,7 @@ const About = () => {
 					<div className='row'>
 						<div className='col-lg-6 col-md-6 col-sm-12'>
 							<img
-								src='img/habesha/about.jpg'
+								src='img/wallpaper/osone.jpeg'
 								alt=''
 								className='img-fluid'
 							/>

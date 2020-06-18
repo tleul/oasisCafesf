@@ -136,7 +136,7 @@ const Pasta = () => {
 				<h1> Monday's Special Lasagne</h1>
 				<div className='gallery-single fix'>
 					<img
-						src='https://via.placeholder.com/800X480'
+						src='img/pasta/lasagna.jpg'
 						className='img-fluid'
 						alt='imagesDinner'
 					/>
@@ -155,7 +155,7 @@ const Pasta = () => {
 				<h1> Legal Marinara (Veggie Marinara)</h1>
 				<div className='gallery-single fix'>
 					<img
-						src='https://via.placeholder.com/800X480'
+						src='img/pasta/veggie-marinara.jpg'
 						className='img-fluid'
 						alt='imagesDinner'
 					/>
@@ -174,7 +174,7 @@ const Pasta = () => {
 				<h1> Ciao-dy Pardner (Bolognese)</h1>
 				<div className='gallery-single fix'>
 					<img
-						src='https://via.placeholder.com/800X480'
+						src='img/pasta/bolo.jpg'
 						className='img-fluid'
 						alt='imagesDinner'
 					/>
@@ -193,7 +193,7 @@ const Pasta = () => {
 				<h1> Unbeleavable (Ravioli)</h1>
 				<div className='gallery-single fix'>
 					<img
-						src='https://via.placeholder.com/800X480'
+						src='img/pasta/ravioli.jpg'
 						className='img-fluid'
 						alt='imagesDinner'
 					/>
