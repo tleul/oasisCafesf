@@ -32,3 +32,11 @@
 .oasis-top h1 {
 	font-size: 2rem;
 }
+.menu-box button {
+	background-color: #df2d0c;
+	border: solid darkgreen;
+	color: white;
+}
+.menu-box button:focus {
+	background-color: white;
+}
