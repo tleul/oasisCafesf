@@ -2,79 +2,72 @@ import React, { Fragment } from 'react';
 
 const Sandwitches = () => {
 	return (
-		// Bagels
 		<Fragment>
 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-				<h4>SALMON</h4>
+				<h4>CHICKEN MALIBU</h4>
 				<div className='gallery-single fix'>
 					<img
-						src='img/american/bagels/one.jpg'
+						src='img/american/sandwitches/chickenmalibu.jpg'
 						className='img-fluid'
-						alt='bagels'
+						alt='dinnerImage'
 					/>
-
 					<div className='why-text'>
 						<p>
-							Salmon, Cream Cheese, Cucumber, Tomato, and Onions
+							Chicken, Ham, Bacon, Lettuce, Tomato, Pickle, and
+							Onions
 						</p>
-						<h5> $9.99</h5>
+						<h5> $12.50</h5>
 					</div>
 				</div>
 			</div>
 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-				<h4>PEANUT BUTTER & JAM </h4>
+				{' '}
+				<h4>TUNA MELT </h4>
 				<div className='gallery-single fix'>
 					<img
-						src='img/american/bagels/three.jpg'
+						src='img/american/sandwitches/melttuna.jpg'
 						className='img-fluid'
 						alt='dinnerImage'
 					/>
 					<div className='why-text'>
-						<p></p>
-						<h5> $22.79</h5>
+						<p>Tuna, Lettuce, Tomatoes, Pickles, and Onions</p>
+						<h5> $11.99</h5>
 					</div>
 				</div>
 			</div>
 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-				<h4>CREAM CHEESE & SUN-DRIED TOMATO</h4>
+				{' '}
+				<h4>CARNIVORE</h4>
 				<div className='gallery-single fix'>
 					<img
-						src='img/american/bagels/five.jpg'
+						src='img/american/sandwitches/one.jpg'
 						className='img-fluid'
 						alt='dinnerImage'
 					/>
 					<div className='why-text'>
-						<p>Sed id magna vitae eros sagittis euismod.</p>
-						<h5> $6.00</h5>
+						<p>
+							Pastrami, Chicken Sausage, Lettuce, Tomatoes,
+							Pickles, and Onions
+						</p>
+						<h5> $11.99</h5>
 					</div>
 				</div>
 			</div>
 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-				<h4>HAM & EGG</h4>
+				{' '}
+				<h4>CAPRESE</h4>
 				<div className='gallery-single fix'>
 					<img
-						src='img/american/bagels/two.jpg'
+						src='img/american/sandwitches/pesto.jpg'
 						className='img-fluid'
 						alt='dinnerImage'
 					/>
 					<div className='why-text'>
-						<p>BACON , HAM EGG AND CHEESE</p>
-						<h5> $8.00</h5>
-					</div>
-				</div>
-			</div>
-
-			<div className='col-lg-4 col-md-6 special-grid dinner'>
-				<h4>HUMMUS</h4>
-				<div className='gallery-single fix'>
-					<img
-						src='img/american/bagels/four.jpg'
-						className='img-fluid'
-						alt='dinnerImage'
-					/>
-					<div className='why-text'>
-						<p>HUMMUS, CUCUMBER, TIMATOES, AND RED ONIONS </p>
-						<h5> $8.00</h5>
+						<p>
+							Pesto Sauce, Mozzarella Cheese, Tomatoes, and
+							Onions, on Sourdough Bread
+						</p>
+						<h5> $10.99</h5>
 					</div>
 				</div>
 			</div>
@@ -160,146 +153,7 @@ export default Sandwitches;
 //         </Fragment>
 //         // End Omeltets
 //         // Sandwiches all served with mayo, mustard, lettuce, tomatoes, pickles, and onions
-//     <Fragment>
-// 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-// 				<div className='gallery-single fix'>
-// 					<img
-// 						src='dinnerImages/img-07.jpg'
-// 						className='img-fluid'
-// 						alt='dinnerImage'
-// 					/>
-// 					<div className='why-text'>
-// 						<h4>CHICKEN MALIBU</h4>
-// 						<p>Chicken, Ham, Bacon, Lettuce, Tomato, Pickle, and Onions</p>
-// 						<h5> $12.50</h5>
-// 					</div>
-// 				</div>
-// 			</div>
-// 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-// 				<div className='gallery-single fix'>
-// 					<img
-// 						src='dinnerImages/img-08.jpg'
-// 						className='img-fluid'
-// 						alt='dinnerImage'
-// 					/>
-// 					<div className='why-text'>
-// 						<h4>TUNA MELT </h4>
-// 						<p>Tuna, Lettuce, Tomatoes, Pickles, and Onions</p>
-// 						<h5> $11.99</h5>
-// 					</div>
-// 				</div>
-// 			</div>
-// 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-// 				<div className='gallery-single fix'>
-// 					<img
-// 						src='dinnerImages/img-09.jpg'
-// 						className='img-fluid'
-// 						alt='dinnerImage'
-// 					/>
-// 					<div className='why-text'>
-// 						<h4>CARNIVORE</h4>
-// 						<p>Pastrami, Chicken Sausage, Lettuce, Tomatoes, Pickles, and Onions</p>
-// 						<h5> $11.99</h5>
-// 					</div>
-// 				</div>
-// 			</div>
-// 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-// 				<div className='gallery-single fix'>
-// 					<img
-// 						src='dinnerImages/img-09.jpg'
-// 						className='img-fluid'
-// 						alt='dinnerImage'
-// 					/>
-// 					<div className='why-text'>
-// 						<h4>HAM & EGG</h4>
-// 						<p>BACON , HAM EGG AND CHEESE</p>
-// 						<h5> $8.00</h5>
-// 					</div>
-// 				</div>
-// 			</div>
-
-// 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-// 				<div className='gallery-single fix'>
-// 					<img
-// 						src='dinnerImages/img-09.jpg'
-// 						className='img-fluid'
-// 						alt='dinnerImage'
-// 					/>
-// 					<div className='why-text'>
-// 						<h4>CAPRESE</h4>
-// 						<p>Pesto Sauce, Mozzarella Cheese, Tomatoes, and Onions, on Sourdough Bread</p>
-// 						<h5> $10.99</h5>
-// 					</div>
-// 				</div>
-//             </div>
-
-// 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-// 				<div className='gallery-single fix'>
-// 					<img
-// 						src='dinnerImages/img-09.jpg'
-// 						className='img-fluid'
-// 						alt='dinnerImage'
-// 					/>
-// 					<div className='why-text'>
-// 						<h4>CHICKEN</h4>
-// 						<h5> $10.99</h5>
-// 					</div>
-// 				</div>
-//             </div>
-//             <div className='col-lg-4 col-md-6 special-grid dinner'>
-// 				<div className='gallery-single fix'>
-// 					<img
-// 						src='dinnerImages/img-09.jpg'
-// 						className='img-fluid'
-// 						alt='dinnerImage'
-// 					/>
-// 					<div className='why-text'>
-// 						<h4>CHICKEN</h4>
-// 						<h5> $10.99</h5>
-// 					</div>
-// 				</div>
-//             </div>
-//             <div className='col-lg-4 col-md-6 special-grid dinner'>
-// 				<div className='gallery-single fix'>
-// 					<img
-// 						src='dinnerImages/img-09.jpg'
-// 						className='img-fluid'
-// 						alt='dinnerImage'
-// 					/>
-// 					<div className='why-text'>
-// 						<h4>CHICKEN</h4>
-// 						<h5> $10.99</h5>
-// 					</div>
-// 				</div>
-//             </div>
-//             <div className='col-lg-4 col-md-6 special-grid dinner'>
-// 				<div className='gallery-single fix'>
-// 					<img
-// 						src='dinnerImages/img-09.jpg'
-// 						className='img-fluid'
-// 						alt='dinnerImage'
-// 					/>
-// 					<div className='why-text'>
-// 						<h4>CHICKEN</h4>
-// 						<h5> $10.99</h5>
-// 					</div>
-// 				</div>
-//             </div>
-//             <div className='col-lg-4 col-md-6 special-grid dinner'>
-// 				<div className='gallery-single fix'>
-// 					<img
-// 						src='dinnerImages/img-09.jpg'
-// 						className='img-fluid'
-// 						alt='dinnerImage'
-// 					/>
-// 					<div className='why-text'>
-// 						<h4>CHICKEN</h4>
-// 						<h5> $10.99</h5>
-// 					</div>
-// 				</div>
-//             </div>
-
-//         </Fragment>
+//
 //         // End Sandwichs
 //         // Burgers
 //         <div className='col-lg-4 col-md-6 special-grid dinner'>
