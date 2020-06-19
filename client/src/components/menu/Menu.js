@@ -8,6 +8,9 @@ import Starters from './Starters';
 import Pasta from './Pasta';
 import American from './americans/American';
 import Saladas from './americans/Salada';
+import Omeletes from './americans/Omelets';
+import Sandwitches from './americans/Sandwitches';
+import Burgers from './americans/Burger';
 
 const Menu = () => {
 	const [menuType, setMenutype] = useState({
@@ -153,6 +156,7 @@ const Menu = () => {
 									</button>
 									<button onClick={(e) => enteries(e)}>
 										<i
+											style={{ color: 'black' }}
 											class='fa fa-cutlery'
 											aria-hidden='true'></i>
 										&nbsp; Entries
@@ -254,10 +258,8 @@ const Menu = () => {
 												&nbsp;Saladas
 											</button>
 										</div>
-										<h1>
-											Entrées all served with injera (flat
-											bread) and fresh salad <br />
-										</h1>
+										<br />
+										<br />
 									</Fragment>
 								) : (
 									''
@@ -304,6 +306,41 @@ const Menu = () => {
 						{menuType.menu === 'americans' ? (
 							<Fragment>
 								<American />
+							</Fragment>
+						) : (
+							''
+						)}
+						{menuType.menu === 'bageles' ? (
+							<Fragment>
+								<American />
+							</Fragment>
+						) : (
+							''
+						)}
+						{menuType.menu === 'omeletes' ? (
+							<Fragment>
+								<Omeletes />
+							</Fragment>
+						) : (
+							''
+						)}
+						{menuType.menu === 'sandwiches' ? (
+							<Fragment>
+								<Sandwitches />
+							</Fragment>
+						) : (
+							''
+						)}
+						{menuType.menu === 'salads' ? (
+							<Fragment>
+								<Saladas />
+							</Fragment>
+						) : (
+							''
+						)}
+						{menuType.menu === 'burgers' ? (
+							<Fragment>
+								<Burgers />
 							</Fragment>
 						) : (
 							''

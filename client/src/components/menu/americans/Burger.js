@@ -2,79 +2,56 @@ import React, { Fragment } from 'react';
 
 const Burgers = () => {
 	return (
-		// Bagels
 		<Fragment>
 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-				<h4>SALMON</h4>
+				<h4>Cheese Burger</h4>
 				<div className='gallery-single fix'>
 					<img
-						src='img/american/bagels/one.jpg'
-						className='img-fluid'
-						alt='bagels'
-					/>
-
-					<div className='why-text'>
-						<p>
-							Salmon, Cream Cheese, Cucumber, Tomato, and Onions
-						</p>
-						<h5> $9.99</h5>
-					</div>
-				</div>
-			</div>
-			<div className='col-lg-4 col-md-6 special-grid dinner'>
-				<h4>PEANUT BUTTER & JAM </h4>
-				<div className='gallery-single fix'>
-					<img
-						src='img/american/bagels/three.jpg'
+						src='img/american/burgers/cheeseburger.jpg'
 						className='img-fluid'
 						alt='dinnerImage'
 					/>
 					<div className='why-text'>
-						<p></p>
-						<h5> $22.79</h5>
+						<h5> $11.99</h5>
 					</div>
 				</div>
 			</div>
 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-				<h4>CREAM CHEESE & SUN-DRIED TOMATO</h4>
+				<h4>Chicken Burger</h4>
 				<div className='gallery-single fix'>
 					<img
-						src='img/american/bagels/five.jpg'
+						src='img/american/burgers/chickenburger.jpg'
 						className='img-fluid'
 						alt='dinnerImage'
 					/>
 					<div className='why-text'>
-						<p>Sed id magna vitae eros sagittis euismod.</p>
-						<h5> $6.00</h5>
+						<h5> $11.99</h5>
 					</div>
 				</div>
 			</div>
 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-				<h4>HAM & EGG</h4>
+				<h4>salmon Burger</h4>
 				<div className='gallery-single fix'>
 					<img
-						src='img/american/bagels/two.jpg'
+						src='img/american/burgers/salmonburger.jpg'
 						className='img-fluid'
 						alt='dinnerImage'
 					/>
 					<div className='why-text'>
-						<p>BACON , HAM EGG AND CHEESE</p>
-						<h5> $8.00</h5>
+						<h5> $11.99</h5>
 					</div>
 				</div>
 			</div>
-
 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-				<h4>HUMMUS</h4>
+				<h4>VEGGIE Burger</h4>
 				<div className='gallery-single fix'>
 					<img
-						src='img/american/bagels/four.jpg'
+						src='img/american/burgers/veggieburger.jpg'
 						className='img-fluid'
 						alt='dinnerImage'
 					/>
 					<div className='why-text'>
-						<p>HUMMUS, CUCUMBER, TIMATOES, AND RED ONIONS </p>
-						<h5> $8.00</h5>
+						<h5> $11.99</h5>
 					</div>
 				</div>
 			</div>
@@ -302,62 +279,7 @@ export default Burgers;
 //         </Fragment>
 //         // End Sandwichs
 //         // Burgers
-//         <div className='col-lg-4 col-md-6 special-grid dinner'>
-// 				<div className='gallery-single fix'>
-// 					<img
-// 						src='dinnerImages/img-09.jpg'
-// 						className='img-fluid'
-// 						alt='dinnerImage'
-// 					/>
-// 					<div className='why-text'>
-//                     <h4>Cheese Burger</h4>
-
-// 						<h5> $11.99</h5>
-// 					</div>
-// 				</div>
-//         </div>
-//         <div className='col-lg-4 col-md-6 special-grid dinner'>
-// 				<div className='gallery-single fix'>
-// 					<img
-// 						src='dinnerImages/img-09.jpg'
-// 						className='img-fluid'
-// 						alt='dinnerImage'
-// 					/>
-// 					<div className='why-text'>
-//                     <h4>Chicken Burger</h4>
-
-// 						<h5> $11.99</h5>
-// 					</div>
-// 				</div>
-//         </div>
-//         <div className='col-lg-4 col-md-6 special-grid dinner'>
-// 				<div className='gallery-single fix'>
-// 					<img
-// 						src='dinnerImages/img-09.jpg'
-// 						className='img-fluid'
-// 						alt='dinnerImage'
-// 					/>
-// 					<div className='why-text'>
-//                     <h4>salmon Burger</h4>
-
-// 						<h5> $11.99</h5>
-// 					</div>
-// 				</div>
-//         </div>
-//         <div className='col-lg-4 col-md-6 special-grid dinner'>
-// 				<div className='gallery-single fix'>
-// 					<img
-// 						src='dinnerImages/img-09.jpg'
-// 						className='img-fluid'
-// 						alt='dinnerImage'
-// 					/>
-// 					<div className='why-text'>
-//                     <h4>VEGGIE Burger</h4>
-
-// 						<h5> $11.99</h5>
-// 					</div>
-// 				</div>
-//         </div>
+//
 //         // Saladas
 //         <div className='col-lg-4 col-md-6 special-grid dinner'>
 // 				<div className='gallery-single fix'>

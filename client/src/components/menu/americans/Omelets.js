@@ -2,79 +2,54 @@ import React, { Fragment } from 'react';
 
 const Omeletes = () => {
 	return (
-		// Bagels
 		<Fragment>
 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-				<h4>SALMON</h4>
+				<h4>DIVISADERO TREAT</h4>
 				<div className='gallery-single fix'>
 					<img
-						src='img/american/bagels/one.jpg'
+						src='img/american/omlets/italian.jpg'
 						className='img-fluid'
-						alt='bagels'
+						alt='dinnerImage'
 					/>
-
 					<div className='why-text'>
 						<p>
-							Salmon, Cream Cheese, Cucumber, Tomato, and Onions
+							3 Eggs, Chicken Italian Sausage, Cheese, and Red
+							Bell Peppers{' '}
 						</p>
-						<h5> $9.99</h5>
-					</div>
-				</div>
-			</div>
-			<div className='col-lg-4 col-md-6 special-grid dinner'>
-				<h4>PEANUT BUTTER & JAM </h4>
-				<div className='gallery-single fix'>
-					<img
-						src='img/american/bagels/three.jpg'
-						className='img-fluid'
-						alt='dinnerImage'
-					/>
-					<div className='why-text'>
-						<p></p>
-						<h5> $22.79</h5>
-					</div>
-				</div>
-			</div>
-			<div className='col-lg-4 col-md-6 special-grid dinner'>
-				<h4>CREAM CHEESE & SUN-DRIED TOMATO</h4>
-				<div className='gallery-single fix'>
-					<img
-						src='img/american/bagels/five.jpg'
-						className='img-fluid'
-						alt='dinnerImage'
-					/>
-					<div className='why-text'>
-						<p>Sed id magna vitae eros sagittis euismod.</p>
-						<h5> $6.00</h5>
-					</div>
-				</div>
-			</div>
-			<div className='col-lg-4 col-md-6 special-grid dinner'>
-				<h4>HAM & EGG</h4>
-				<div className='gallery-single fix'>
-					<img
-						src='img/american/bagels/two.jpg'
-						className='img-fluid'
-						alt='dinnerImage'
-					/>
-					<div className='why-text'>
-						<p>BACON , HAM EGG AND CHEESE</p>
-						<h5> $8.00</h5>
+						<h5> $11.99</h5>
 					</div>
 				</div>
 			</div>
 
 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-				<h4>HUMMUS</h4>
+				<h4>VEGGIE OMELETTE</h4>
 				<div className='gallery-single fix'>
 					<img
-						src='img/american/bagels/four.jpg'
+						src='img/american/omlets/veggie.jpg'
 						className='img-fluid'
 						alt='dinnerImage'
 					/>
 					<div className='why-text'>
-						<p>HUMMUS, CUCUMBER, TIMATOES, AND RED ONIONS </p>
-						<h5> $8.00</h5>
+						<p>
+							3 Eggs, Mushrooms, Tomatoes, Red Onions, Jalapeños,
+							and Spinach
+						</p>
+						<h5> $11.99</h5>
+					</div>
+				</div>
+			</div>
+
+			<div className='col-lg-4 col-md-6 special-grid dinner'>
+				<h4>THE OASIS</h4>
+				<div className='gallery-single fix'>
+					<img
+						src='img/american/omlets/one.jpg'
+						className='img-fluid'
+						alt='dinnerImage'
+					/>
+					<div className='why-text'>
+						<p>3 Eggs, Ham, Cheese, Onions, and Jalapeños</p>
+						<h5> $11.99</h5>
 					</div>
 				</div>
 			</div>
@@ -84,80 +59,7 @@ const Omeletes = () => {
 export default Omeletes;
 //   //  End bagels
 //         // Omelets
-//         <Fragment>
-// 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-// 				<div className='gallery-single fix'>
-// 					<img
-// 						src='dinnerImages/img-07.jpg'
-// 						className='img-fluid'
-// 						alt='dinnerImage'
-// 					/>
-// 					<div className='why-text'>
-// 						<h4>DIVISADERO TREAT</h4>
-// 						<p>
-// 							3 Eggs, Chicken Italian Sausage, Cheese, and Red Bell Peppers	</p>
-// 						<h5> $11.99</h5>
-// 					</div>
-// 				</div>
-// 			</div>
-// 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-// 				<div className='gallery-single fix'>
-// 					<img
-// 						src='dinnerImages/img-08.jpg'
-// 						className='img-fluid'
-// 						alt='dinnerImage'
-// 					/>
-// 					<div className='why-text'>
-// 						<h4>PEANUT BUTTER & JAM </h4>
-// 						<p></p>
-// 						<h5> $22.79</h5>
-// 					</div>
-// 				</div>
-// 			</div>
-// 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-// 				<div className='gallery-single fix'>
-// 					<img
-// 						src='dinnerImages/img-09.jpg'
-// 						className='img-fluid'
-// 						alt='dinnerImage'
-// 					/>
-// 					<div className='why-text'>
-// 						<h4>VEGGIE OMELETTE</h4>
-// 						<p>3 Eggs, Mushrooms, Tomatoes, Red Onions, Jalapeños, and Spinach</p>
-// 						<h5> $11.99</h5>
-// 					</div>
-// 				</div>
-// 			</div>
-// 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-// 				<div className='gallery-single fix'>
-// 					<img
-// 						src='dinnerImages/img-09.jpg'
-// 						className='img-fluid'
-// 						alt='dinnerImage'
-// 					/>
-// 					<div className='why-text'>
-// 						<h4>HAM & EGG</h4>
-// 						<p>BACON , HAM EGG AND CHEESE</p>
-// 						<h5> $8.00</h5>
-// 					</div>
-// 				</div>
-// 			</div>
-
-// 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-// 				<div className='gallery-single fix'>
-// 					<img
-// 						src='dinnerImages/img-09.jpg'
-// 						className='img-fluid'
-// 						alt='dinnerImage'
-// 					/>
-// 					<div className='why-text'>
-// 						<h4>THE OASIS</h4>
-// 						<p>3 Eggs, Ham, Cheese, Onions, and Jalapeños</p>
-// 						<h5> $11.99</h5>
-// 					</div>
-// 				</div>
-// 			</div>
-//         </Fragment>
+//
 //         // End Omeltets
 //         // Sandwiches all served with mayo, mustard, lettuce, tomatoes, pickles, and onions
 //     <Fragment>
