@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import Drinks from './Drinks';
-
+import Typist from 'react-typist';
 import Enteries from './Enteries';
 import Dinner from './Dinner';
 
@@ -18,7 +18,7 @@ const Menu = () => {
 	const [americanMenu, toggleAmerican] = useState(false);
 	setTimeout(() => {
 		toggleInfo(false);
-	}, 5000);
+	}, 15000);
 	const bageles = () => {
 		if (menuType.menu !== 'bageles') {
 			console.log(americanMenu);
@@ -120,15 +120,19 @@ const Menu = () => {
 								</p>
 								{info && (
 									<div class='info'>
-										<i
-											style={{
-												color: 'red',
-												fontSize: 20,
-											}}>
-											Please hover over or press on the
-											meal image for description ♥ Thank
-											You ♥
-										</i>
+										<Typist>
+											{' '}
+											<i
+												className='flash'
+												style={{
+													color: 'red',
+													fontSize: 20,
+												}}>
+												Please hover over or press on
+												the meal image for description ♥
+												Thank You ♥
+											</i>
+										</Typist>
 									</div>
 								)}
 							</div>
