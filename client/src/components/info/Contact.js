@@ -37,12 +37,12 @@ const Contact = () => {
 
 		setcontactform({ ...contactForm, [e.target.name]: e.target.value });
 	};
+
 	const sendEmail = (e) => {
 		e.preventDefault();
-		const errorContainer = document.getElementsByClassName('row');
-		errorContainer.innerHTML('Helooo');
-	};
 
+		// document.getElementById('error').innerHTML = 'Helooo';
+	};
 	return (
 		<Fragment>
 			<div className='all-page-title page-breadcrumb'>
@@ -65,6 +65,9 @@ const Contact = () => {
 									Please type any thing you feel, We are
 									welcome to assist you!!
 								</p>
+							</div>
+							<div className='menu-box'>
+								<p className='flash' id='error'></p>
 							</div>
 						</div>
 					</div>
@@ -134,6 +137,7 @@ const Contact = () => {
 										</div>
 										<div className='submit-button text-center'>
 											<button
+												id='send'
 												onClick={(e) => sendEmail(e)}
 												className='btn btn-common'
 												type='submit'>

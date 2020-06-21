@@ -172,7 +172,7 @@ const Menu = () => {
 										/>
 										&nbsp; Pre-Pasta-Rous
 									</button>
-									<button onClick={(e) => pasta(e)}>
+									<button onClick={(e) => american(e)}>
 										<img
 											width='20'
 											height='20'
@@ -304,13 +304,13 @@ const Menu = () => {
 						) : (
 							''
 						)}
-						{/* {menuType.menu === 'americans' ? (
+						{menuType.menu === 'americans' ? (
 							<Fragment>
 								<American />
 							</Fragment>
 						) : (
 							''
-						)} */}
+						)}
 						{menuType.menu === 'bageles' ? (
 							<Fragment>
 								<American />

@@ -3,7 +3,8 @@ import React, { Fragment } from 'react';
 const American = () => {
 	return (
 		<Fragment>
-			<div className='col-lg-4 col-md-6 special-grid dinner'>
+			<h1>heloo</h1>
+			{/* <div className='col-lg-4 col-md-6 special-grid dinner'>
 				<h4>SALMON</h4>
 				<div className='gallery-single fix'>
 					<img
@@ -76,7 +77,7 @@ const American = () => {
 						<h5> $8.00</h5>
 					</div>
 				</div>
-			</div>
+			</div> */}
 		</Fragment>
 	);
 };
