@@ -1,8 +1,16 @@
 const express = require('express');
-
+const cor = require('node-cron');
 const app = express();
 
 const PORT = process.env.PORT || 5000;
+
+// app.get('/', (req, res) => {
+// 	console.log('heloo');
+// 	cor.schedule('* * * * *', () => {
+// 		console.log('tes');
+// 	});
+// });
+
 if (
 	process.env.NODE_ENV === 'production' ||
 	process.env.NODE_ENV === 'staging'
