@@ -4,7 +4,7 @@ const American = () => {
 	return (
 		<Fragment>
 			<h1>heloo</h1>
-			{/* <div className='col-lg-4 col-md-6 special-grid dinner'>
+			<div className='col-lg-4 col-md-6 special-grid dinner'>
 				<h4>SALMON</h4>
 				<div className='gallery-single fix'>
 					<img
@@ -22,7 +22,7 @@ const American = () => {
 				</div>
 			</div>
 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-				<h4>PEANUT BUTTER & JAM </h4>
+				<h4>PEANUT BUTTER and JAM </h4>
 				<div className='gallery-single fix'>
 					<img
 						src='img/american/bagels/three.jpg'
@@ -36,7 +36,7 @@ const American = () => {
 				</div>
 			</div>
 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-				<h4>CREAM CHEESE & SUN-DRIED TOMATO</h4>
+				<h4>CREAM CHEESE and SUN-DRIED TOMATO</h4>
 				<div className='gallery-single fix'>
 					<img
 						src='img/american/bagels/five.jpg'
@@ -50,7 +50,7 @@ const American = () => {
 				</div>
 			</div>
 			<div className='col-lg-4 col-md-6 special-grid dinner'>
-				<h4>HAM & EGG</h4>
+				<h4>HAM and EGG</h4>
 				<div className='gallery-single fix'>
 					<img
 						src='img/american/bagels/two.jpg'
@@ -77,7 +77,7 @@ const American = () => {
 						<h5> $8.00</h5>
 					</div>
 				</div>
-			</div> */}
+			</div>
 		</Fragment>
 	);
 };
