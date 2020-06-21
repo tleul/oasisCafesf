@@ -122,7 +122,7 @@ const Menu = () => {
 									Coffee Best In town
 								</p>
 								{info && (
-									<div class='info'>
+									<div className='info'>
 										<Typist>
 											{' '}
 											<i
@@ -157,7 +157,7 @@ const Menu = () => {
 									<button onClick={(e) => enteries(e)}>
 										<i
 											style={{ color: 'black' }}
-											class='fa fa-cutlery'
+											className='fa fa-cutlery'
 											aria-hidden='true'></i>
 										&nbsp; Entries
 									</button>
