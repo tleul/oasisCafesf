@@ -39,7 +39,8 @@ const Contact = () => {
 	};
 	const sendEmail = (e) => {
 		e.preventDefault();
-		console.log(errors);
+		const errorContainer = document.getElementsByClassName('row');
+		errorContainer.innerHTML('Helooo');
 	};
 
 	return (
