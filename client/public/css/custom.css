@@ -41,6 +41,10 @@
 	background-color: white;
 	content: 'Enjoy ';
 }
+#error {
+	color: red;
+	font-size: 2em;
+}
 .menu-box .flash {
 	color: red;
 	font-weight: bold;
