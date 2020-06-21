@@ -68,6 +68,7 @@ const Menu = () => {
 		}
 	};
 	const american = () => {
+		console.log('clicked');
 		if (menuType.menu !== 'americans') {
 			toggleAmerican(true);
 			setMenutype({ menu: 'americans' });
@@ -178,7 +179,7 @@ const Menu = () => {
 											src='img/pasta/burger.svg'
 											alt=''
 										/>
-										&nbsp;American Menu
+										&nbsp; American Menu
 									</button>
 								</div>
 								{menuType.menu === 'enteries' ||

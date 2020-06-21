@@ -44,11 +44,11 @@ const Contact = () => {
 
 	return (
 		<Fragment>
-			{/* <div className='all-page-title page-breadcrumb'>
+			<div className='all-page-title page-breadcrumb'>
 				<div className='container text-center'>
 					<div className='row'></div>
 				</div>
-			</div> */}
+			</div>
 			<br />
 			<br />
 			<br />
