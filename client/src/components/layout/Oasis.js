@@ -20,7 +20,7 @@ const Oasis = () => {
 				</h2>
 
 				<Link to='https://www.yelp.com/biz/oasis-cafe-san-francisco-3'>
-					yelp <i class='fab fa-yelp'></i>
+					yelp <i className='fab fa-yelp'></i>
 				</Link>
 			</div>
 		</div>
