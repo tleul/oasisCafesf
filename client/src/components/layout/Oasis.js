@@ -19,9 +19,9 @@ const Oasis = () => {
 					</strong>
 				</h2>
 
-				<a href='https://www.yelp.com/biz/oasis-cafe-san-francisco-3'>
+				<Link to='https://www.yelp.com/biz/oasis-cafe-san-francisco-3'>
 					yelp <i class='fab fa-yelp'></i>
-				</a>
+				</Link>
 			</div>
 		</div>
 	);

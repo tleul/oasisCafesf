@@ -120,7 +120,7 @@ const Menu = () => {
 								<p>
 									Please Explore Our Delicious Ethiopian,
 									Ertrian and Amercan food Menu <br />
-									Coffee Best In town
+									Best Drip Coffee in Town
 								</p>
 								{info && (
 									<div className='info'>
@@ -197,6 +197,15 @@ const Menu = () => {
 										<h1>
 											Entrées all served with injera (flat
 											bread) and fresh salad <br />
+										</h1>
+										<h1 style={{ color: 'red' }}>
+											<strong>
+												{' '}
+												-Spice level can be adjusted to
+												order <br />
+												- All injera (flat bread) is
+												gluten-free <br />
+											</strong>{' '}
 										</h1>
 									</Fragment>
 								) : (

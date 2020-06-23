@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 
 const Saladas = () => {
 	return (
-		// Bagels
 		<Fragment>
 			<div className='col-lg-4 col-md-6 special-grid dinner'>
 				<h4>CALIFORNIA CHICKEN SALAD</h4>

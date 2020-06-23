@@ -40,8 +40,6 @@ const Contact = () => {
 
 	const sendEmail = (e) => {
 		e.preventDefault();
-
-		// document.getElementById('error').innerHTML = 'Helooo';
 	};
 	return (
 		<Fragment>
