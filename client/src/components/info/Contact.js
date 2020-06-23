@@ -1,6 +1,12 @@
-import React, { Fragment, useState } from 'react';
-
+import React, { Fragment, useState, useEffect } from 'react';
+import axios from 'axios';
+import API from '../../api/api';
+import { postEmail } from './../../action/sednMessage';
 const Contact = () => {
+	const [msg, setMsg] = useState({});
+	// useEffect(() => {
+	// 	sendEmail();
+	// }, []);
 	const [contactForm, setcontactform] = useState({
 		name: '',
 		email: '',
@@ -38,9 +44,17 @@ const Contact = () => {
 		setcontactform({ ...contactForm, [e.target.name]: e.target.value });
 	};
 
-	const sendEmail = (e) => {
+	const sendEmail = async (e) => {
 		e.preventDefault();
+		const body = JSON.stringify(contactForm);
+		const data = await API.post('/emailsend', body);
+		setMsg(data.data);
+		setInterval(() => {
+			setMsg({});
+		}, 5000);
+		console.log(msg);
 	};
+
 	return (
 		<Fragment>
 			<div className='all-page-title page-breadcrumb'>
@@ -64,6 +78,7 @@ const Contact = () => {
 									welcome to assist you!!
 								</p>
 							</div>
+
 							<div className='menu-box'>
 								<p className='flash' id='error'></p>
 							</div>
@@ -75,6 +90,11 @@ const Contact = () => {
 								<div className='row'>
 									<div className='col-md-12'>
 										<div className='form-group'>
+											<div className='help-block with-errors'>
+												<h1 style={{ color: 'red' }}>
+													{msg && msg.msg}
+												</h1>
+											</div>
 											<input
 												type='text'
 												className='form-control'
@@ -135,12 +155,12 @@ const Contact = () => {
 										</div>
 										<div className='submit-button text-center'>
 											<button
-												id='send'
+												enabled='true'
 												onClick={(e) => sendEmail(e)}
-												className='btn btn-common'
 												type='submit'>
 												Send Message
 											</button>
+
 											<div
 												id='msgSubmit'
 												className='h3 text-center hidden'></div>

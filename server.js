@@ -1,16 +1,25 @@
 const express = require('express');
-const cor = require('node-cron');
+const { ppid } = require('process');
+// const cor = require('node-cron');
 const app = express();
 
-const PORT = process.env.PORT || 5000;
+app.use(express.json({ extended: false }));
 
-// app.get('/', (req, res) => {
-// 	console.log('heloo');
-// 	cor.schedule('* * * * *', () => {
-// 		console.log('tes');
-// 	});
-// });
+app.use((req, res, next) => {
+	res.header('Access-Control-Allow-Origin', '*');
+	res.header(
+		'Access-Control-Allow-Headers',
+		'Origin, X-Requested-With, Content-Type, Accept, x-auth-token',
+	);
+	res.header(
+		'Access-Control-Allow-Methods',
+		'PUT, POST, GET, DELETE, OPTIONS',
+	);
+	next();
+});
 
+app.use('/api/emailsend', require('./router/emailSend'));
+// app.use('/get', require('./router/emailSend'));
 if (
 	process.env.NODE_ENV === 'production' ||
 	process.env.NODE_ENV === 'staging'
@@ -21,5 +30,5 @@ if (
 		res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
 	});
 }
-
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, console.log('Server Connected '));

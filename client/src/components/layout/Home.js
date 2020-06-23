@@ -10,6 +10,12 @@ const Home = () => {
 		<Fragment>
 			{' '}
 			<div className='slides-container'>
+				{/* <br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br /> */}
 				<Oasis />
 				<ItemSlider />
 				<About />

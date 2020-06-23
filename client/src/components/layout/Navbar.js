@@ -24,6 +24,8 @@ const Navbar = () => {
 								alt=''
 							/>
 						</Link>
+
+						<br />
 						<button
 							className='navbar-toggler'
 							type='button'
