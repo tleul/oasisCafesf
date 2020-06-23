@@ -1,6 +1,10 @@
-import React, { Fragment, useState } from 'react';
-
+import React, { Fragment, useState, useEffect } from 'react';
+import axios from 'axios';
 const Contact = () => {
+	const [test, setTest] = useState({});
+	useEffect(() => {
+		sendEmail();
+	}, []);
 	const [contactForm, setcontactform] = useState({
 		name: '',
 		email: '',
@@ -38,9 +42,19 @@ const Contact = () => {
 		setcontactform({ ...contactForm, [e.target.name]: e.target.value });
 	};
 
-	const sendEmail = (e) => {
-		e.preventDefault();
+	const sendEmail = async () => {
+		// e.preventDefault();
+		const body = JSON.stringify(contactForm);
+
+		const config = {
+			headers: {
+				'Content-Type': 'application/json',
+			},
+		};
+		const data = await axios.get('http://localhost:5000/get', config);
+		setTest(data.data);
 	};
+	console.log(test);
 	return (
 		<Fragment>
 			<div className='all-page-title page-breadcrumb'>
@@ -141,6 +155,9 @@ const Contact = () => {
 												type='submit'>
 												Send Message
 											</button>
+											{test.length > 0
+												? test[0].name
+												: ''}
 											<div
 												id='msgSubmit'
 												className='h3 text-center hidden'></div>
