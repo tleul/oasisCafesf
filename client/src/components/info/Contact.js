@@ -3,10 +3,17 @@ import axios from 'axios';
 import API from '../../api/api';
 import { postEmail } from './../../action/sednMessage';
 const Contact = () => {
+	useEffect(() => {
+		getMessages();
+	}, []);
+	const getMessages = async () => {
+		const messages = await API.get('/getmesssage');
+
+		setmsgdata(messages.data);
+	};
+	const [msgdata, setmsgdata] = useState({});
 	const [msg, setMsg] = useState({});
-	// useEffect(() => {
-	// 	sendEmail();
-	// }, []);
+
 	const [contactForm, setcontactform] = useState({
 		name: '',
 		email: '',
@@ -48,12 +55,15 @@ const Contact = () => {
 		e.preventDefault();
 		const body = JSON.stringify(contactForm);
 		const data = await API.post('/emailsend', body);
-		setMsg(data.data);
+		// setMsg(data.data);
+
+		setmsgdata(data.data);
 		setInterval(() => {
 			setMsg({});
-		}, 5000);
+		}, 10000);
 		console.log(msg);
 	};
+	console.log(msgdata);
 
 	return (
 		<Fragment>
@@ -77,6 +87,10 @@ const Contact = () => {
 									Please type any thing you feel, We are
 									welcome to assist you!!
 								</p>
+								{msgdata.user &&
+									msgdata.user.map((each) => (
+										<p>{each.name}</p>
+									))}
 							</div>
 
 							<div className='menu-box'>
@@ -155,8 +169,8 @@ const Contact = () => {
 										</div>
 										<div className='submit-button text-center'>
 											<button
-												enabled='true'
 												onClick={(e) => sendEmail(e)}
+												className='btn btn-common'
 												type='submit'>
 												Send Message
 											</button>
