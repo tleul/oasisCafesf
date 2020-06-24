@@ -19,6 +19,7 @@ app.use((req, res, next) => {
 });
 
 app.use('/api/emailsend', require('./router/emailSend'));
+app.use('/api/getmesssage', require('./router/emailSend'));
 // app.use('/get', require('./router/emailSend'));
 if (
 	process.env.NODE_ENV === 'production' ||
