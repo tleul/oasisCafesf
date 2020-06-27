@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import './style.css';
 import WriteReview from './Wrirereviewcard';
 const Review = () => {
@@ -9,7 +9,15 @@ const Review = () => {
 		nice: 'img/review/nice.png',
 		exccellent: 'img/review/excellent.png',
 	};
-	const [profile, makeProfile] = useState({});
+	const btncolor={
+		nice: "btn btn-primary",
+		good: "btn btn-danger",
+		bad: "btn btn-warning"
+	}
+	const [profile, makeProfile] = useState({
+	url: 'img/review/excellent.png',
+	btn: btncolor.good
+	});
 	const [emojie, setemojie] = useState({
 		sad: '',
 		tumbsdown: '',
@@ -21,25 +29,25 @@ const Review = () => {
 		switch (rateNum) {
 			case 1:
 				setemojie({ thumbsdown: 'scale(1.5)' });
-				makeProfile(emojieCollection.tumbsdown);
+				makeProfile({url: emojieCollection.tumbsdown, btn: btncolor.bad});
 				break;
 
 			case 2:
 				setemojie({ sad: 'scale(1.5)' });
-				makeProfile(emojieCollection.sad);
+				makeProfile({url: emojieCollection.sad, btn: btncolor.bad});
 				break;
 			case 3:
 				setemojie({ good: 'scale(1.5)' });
-				makeProfile(emojieCollection.good);
+				makeProfile({url: emojieCollection.good, btn: btncolor.nice});
 				break;
 			case 4:
 				setemojie({ nice: 'scale(1.5)' });
-				makeProfile(emojieCollection.nice);
+				makeProfile({url: emojieCollection.nice , btn: btncolor.good});
 				break;
 
 			case 5:
 				setemojie({ exccellent: 'scale(1.5)' });
-				makeProfile(emojieCollection.exccellent);
+				makeProfile({url: emojieCollection.exccellent, btn: btncolor.bad});
 				break;
 			default:
 				setemojie({
@@ -52,11 +60,54 @@ const Review = () => {
 				makeProfile({});
 		}
 	};
-	console.log(profile);
+
+
+
+
+
 	return (
-		<div className='container'>
-			<div className='box-review'>
-				<div className='star-rate'>
+		<Fragment>
+			<div className='container'>
+
+			<div className="card mb-3" style={{maxWidth: 610}}>
+			<div className='only-lg'>
+			<div className='star-rate'>
+		
+					<span
+					
+						onClick={(e) => handleRate(e, 1)}
+						className='fa fa-star '></span>
+					<span
+						onClick={(e) => handleRate(e, 2)}
+						className='fa fa-star '></span>
+		
+					<span
+						onClick={(e) => handleRate(e, 3)}
+						className='fa fa-star '></span>
+					<span
+						onClick={(e) => handleRate(e, 4)}
+						className='fa fa-star'></span>
+					<span
+						onClick={(e) => handleRate(e, 5)}
+						className='fa fa-star'></span>
+				</div>
+				
+			</div>
+  <div className="row no-gutters">
+    <div className="col-md-4">
+      <img src={profile.url}  alt="..."/>
+	  
+		<div>
+		<div className='only-lg'>
+			<div className='btn-pad'>
+			<button type="button" class={profile.btn}>Submit</button>
+			</div>
+		
+		</div>
+		</div>
+	<div className='only-mobile'>
+	
+	<div className='star-rate'>
 					<span
 						onClick={(e) => handleRate(e, 1)}
 						className='fa fa-star '></span>
@@ -73,90 +124,29 @@ const Review = () => {
 						onClick={(e) => handleRate(e, 5)}
 						className='fa fa-star'></span>
 				</div>
-				<div className='rate-emojie'>
-					<span>
-						<img
-							style={{
-								transform: emojie.thumbsdown,
-							}}
-							width='50'
-							className='rate-img'
-							src='img/review/thumbs-down.png'
-							alt=''
-						/>
-					</span>
-					<span>
-						<img
-							style={{ transform: emojie.sad }}
-							width='50'
-							className='rate-img'
-							src='img/review/sad.png'
-							alt=''
-						/>
-					</span>
-					<span>
-						<img
-							style={{ transform: emojie.good }}
-							width='50'
-							className='rate-img'
-							src='img/review/good.png'
-							alt=''
-						/>
-					</span>
-					<span>
-						<img
-							style={{
-								transform: emojie.nice,
-							}}
-							width='50'
-							className='rate-img'
-							src='img/review/nice.png'
-							alt=''
-						/>
-					</span>
-					<span>
-						<img
-							style={{
-								transform: emojie.exccellent,
-							}}
-							width='50'
-							className='rate-img'
-							src='img/review/excellent.png'
-							alt=''
-						/>
-					</span>
-				</div>
-				<WriteReview profile={profile} />
+	</div>
+    </div>
+    <div className="col-md-8">
+      <div className="card-body">
+        <h5 className="card-title">Write Review</h5>
+
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        {/* <p className="card-text">
+			This is a wider card with supporting text below 
+			as a natural lead-in to additional content. This 
+			content is a little bit longer.</p> */}
+        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+		<div   className='only-mobile btn-pad '>
+			<button type="button" class={profile.btn}>Submit</button>
 			</div>
-		</div>
+	  </div>
+    </div>
+  </div>
+</div>
+</div>
+		</Fragment>
+
 	);
 };
 
 export default Review;
-// <Fragment>
-// 	<div className='container'>
-// 		<div class='form-group'>
-// 			<label for='exampleFormControlTextarea1'>
-// 				Write Review
-// 			</label>
-// 			<div className='rate'>
-//
-// 			</div>
-
-// 			<textarea
-// 				class='form-control'
-// 				id='exampleFormControlTextarea1'
-// 				rows='3'></textarea>
-// 		</div>
-
-{
-	/* <p>Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Pariatur eum quo quibusdam, illo, beatae ab offici
-            a eos odit doloribus aliquam veniam nulla, voluptatem quaer
-                at itaque similique hic saepe officiis molestiae!</p>
-        </div>
-		<div className='rate'>
-			 */
-}
-// 	</div>
-// </Fragment>
