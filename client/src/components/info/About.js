@@ -1,13 +1,19 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import Review from './Review';
 
 const About = () => {
 	return (
 		<Fragment>
 			<br />
-			<b>
-				<br />
-			</b>
+
+			<br />
+			<br />
+
+			<br />
+			<br />
+
+			<br />
 
 			<div className='about-section-box'>
 				<div className='container'>
@@ -45,6 +51,7 @@ const About = () => {
 								</Link>
 							</div>
 						</div>
+						<Review />
 					</div>
 				</div>
 			</div>
