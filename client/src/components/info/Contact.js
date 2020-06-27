@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react';
-import axios from 'axios';
+
 import API from '../../api/api';
-import { postEmail } from './../../action/sednMessage';
+
 const Contact = () => {
 	useEffect(() => {
 		getMessages();

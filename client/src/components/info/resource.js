@@ -143,3 +143,42 @@
 	height: 18rem;
 	box-shadow: 0px 10px 10px 10px red;
 }
+
+	/* .review-btn {
+		width: 5rem;
+		font-size: 1rem;
+		border: none;
+		color: black;
+		background-color: white;
+		margin: 0rem 0rem 4rem 0rem;
+		box-shadow: 0px 10px 10px 10px red;
+	}
+	.pf-review {
+		margin: 3rem 1rem 0rem 0rem;
+		width: 10rem;
+		height: 5rem;
+		box-shadow: 0px 10px 10px 10px red;
+	}
+	.card-writereview textarea {
+		font-size: 1rem;
+		margin: 3rem 1rem 0rem 0rem;
+		border: solid red 1px;
+
+		box-shadow: 10px 0px 10px 10px red;
+	}
+	.star-rate span {
+		margin: 0;
+		font-size: 1rem;
+	}
+	.rate-img {
+		width: 40px;
+		margin: 0;
+	}
+	.star-rate span {
+		margin: 1.2rem;
+		font-size: 2rem;
+	}
+	.rate-emojie .rate-img {
+		margin: 1rem 1rem 1rem 1rem;
+	} */
+}

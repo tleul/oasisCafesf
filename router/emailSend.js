@@ -3,8 +3,8 @@ const nodemailer = require('nodemailer');
 const router = express.Router();
 
 const fs = require('fs');
-const fileName = './user.json';
-const db = require('../user.json');
+const fileName = 'user.json';
+const db = require('./db/user.json');
 // router.get('/', (req, res) => {
 // 	res.json(db.user);
 
