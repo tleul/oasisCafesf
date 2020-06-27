@@ -87,10 +87,6 @@ const Contact = () => {
 									Please type any thing you feel, We are
 									welcome to assist you!!
 								</p>
-								{msgdata.user &&
-									msgdata.user.map((each) => (
-										<p>{each.name}</p>
-									))}
 							</div>
 
 							<div className='menu-box'>
