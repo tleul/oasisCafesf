@@ -14,15 +14,22 @@ router.post ('/', async(req,res)=>{
         review: review,
         rate:rate
     }
- res.json(data)
+    db.review.push(data);
+ await fs.writeFile(fileName, JSON.stringify(db), function writeJSON(err) {
+		if (err) return console.log(err);
+        console.log(db)
+	});
 
 
 
+	
+})
+router.get('/', (req,res) => {
 
-	// await fs.writeFile(fileName, JSON.stringify(db), function writeJSON(err) {
-	// 	if (err) return console.log(err);
-    //     console.log(db)
-	// });
+    const reviews = db.review 
+    const filterReview = reviews.filter(review => review.rate > 3)
+    res.json(filterReview)
+
 })
 
 

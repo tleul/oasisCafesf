@@ -164,7 +164,7 @@ const Review = () => {
                   <div className="btn-pad">
                     <button
                       type="button"
-                      onSubmit={(e) => submitHundler(e)}
+                      onClick={(e) => submitHundler(e)}
                       className={profile.btn}
                     >
                       Submit
