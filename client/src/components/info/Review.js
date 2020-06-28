@@ -1,15 +1,16 @@
 import React, { Fragment, useState, useEffect } from 'react';
+import moment from 'moment';
 import './style.css';
 import API from '../../api/api';
 import { reviewAction } from './../../action/review';
 
 const Review = () => {
 	const [userrateing, setuserRateing] = useState({
-		sad: '',
-		tumbsdown: '',
-		good: '',
-		nice: '',
-		exccellent: '',
+		sad: 'yellow',
+		tumbsdown: 'yellow',
+		good: 'orange',
+		nice: 'orange',
+		exccellent: 'red',
 	});
 	const [userreviews, setuserReviews] = useState({
 		reviews: '',
@@ -174,9 +175,11 @@ const Review = () => {
 	const submitHundler = async (e) => {
 		console.log('heloo');
 		e.preventDefault();
+		const dateOne = moment().format('MMMM Do YYYY, h:mm:ss a');
+
 		try {
 			const { rate } = emojie;
-			const reviewData = { ...reviewForm, rate };
+			const reviewData = { ...reviewForm, rate, dateOne };
 			const body = JSON.stringify(reviewData);
 			const res = await API.post('/review', body);
 
@@ -312,7 +315,10 @@ const Review = () => {
 
 				{userreviews.loading &&
 					userreviews.reviews.map((review) => (
-						<div className='card mb-3' style={{ maxWidth: 610 }}>
+						<div
+							key={review.id}
+							className='card mb-3'
+							style={{ maxWidth: 610 }}>
 							<div className='row no-gutters'>
 								<div className='col-md-4'>
 									<img
@@ -320,18 +326,61 @@ const Review = () => {
 										className='card-img'
 										alt='...'
 									/>
+									<div className='user-rating'>
+										<span
+											style={{
+												color:
+													review.rate >= 1
+														? userrateing.tumbsdown
+														: 'none',
+											}}
+											className='fa fa-star '></span>
+										<span
+											style={{
+												color:
+													review.rate >= 2
+														? userrateing.sad
+														: 'none',
+											}}
+											className='fa fa-star '></span>
+										<span
+											style={{
+												color:
+													review.rate >= 3
+														? userrateing.good
+														: 'none',
+											}}
+											className='fa fa-star '></span>
+										<span
+											style={{
+												color:
+													review.rate >= 4
+														? userrateing.nice
+														: 'none',
+											}}
+											className='fa fa-star'></span>
+										<span
+											style={{
+												color:
+													review.rate == 5
+														? userrateing.exccellent
+														: 'none',
+											}}
+											className='fa fa-star'></span>
+									</div>
 								</div>
 								<div className='col-md-8'>
 									<div className='card-body'>
 										<h5 className='card-title'>
 											{review.name}
 										</h5>
+
 										<p className='card-text'>
 											{review.review}
 										</p>
 										<p className='card-text'>
 											<small className='text-muted'>
-												Last updated 3 mins ago
+												{review.date}
 											</small>
 										</p>
 									</div>
