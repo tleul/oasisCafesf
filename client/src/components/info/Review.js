@@ -1,8 +1,26 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import './style.css';
 import API from '../../api/api';
+import { reviewAction } from './../../action/review';
 
 const Review = () => {
+	const [userrateing, setuserRateing] = useState({
+		sad: '',
+		tumbsdown: '',
+		good: '',
+		nice: '',
+		exccellent: '',
+	});
+	const [userreviews, setuserReviews] = useState({
+		reviews: '',
+		loading: false,
+	});
+
+	useState(async () => {
+		const dat = await reviewAction();
+
+		setuserReviews({ reviews: dat, loading: true });
+	});
 	const [rateColor, setrateColor] = useState({
 		sad: '',
 		tumbsdown: '',
@@ -23,7 +41,15 @@ const Review = () => {
 		name: '',
 		review: ' ',
 	});
-	const { name, review, rate } = reviewForm;
+	const { name, review } = reviewForm;
+	const userProfile = [
+		'img/review/thumbs-down.png',
+		'img/review/sad.png',
+
+		'img/review/good.png',
+		'img/review/nice.png',
+		'img/review/excellent.png',
+	];
 	const emojieCollection = {
 		sad: 'img/review/sad.png',
 		tumbsdown: 'img/review/thumbs-down.png',
@@ -40,7 +66,42 @@ const Review = () => {
 		url: 'img/review/excellent.png',
 		btn: btncolor.good,
 	});
+	const handReviewRating = (rate) => {
+		switch (rate) {
+			case 1:
+				setuserRateing({});
+				break;
 
+			case 2:
+				setuserRateing({ tumbsdown: 'yellow', sad: 'yellow' });
+				break;
+			case 3:
+				setuserRateing({
+					tumbsdown: 'yellow',
+					sad: 'yellow',
+					good: 'orange',
+				});
+				break;
+			case 4:
+				setuserRateing({
+					tumbsdown: 'yellow',
+					sad: 'yellow',
+					good: 'orange',
+					nice: 'red',
+				});
+				break;
+
+			case 5:
+				setuserRateing({
+					tumbsdown: 'yellow',
+					sad: 'yellow',
+					good: 'orange',
+					nice: 'red',
+					exccellent: 'red',
+				});
+				break;
+		}
+	};
 	const handleRate = (e, rateNum) => {
 		switch (rateNum) {
 			case 1:
@@ -109,7 +170,6 @@ const Review = () => {
 	};
 	const onChangehundel = (e) => {
 		setreviewForm({ ...reviewForm, [e.target.name]: e.target.value });
-		console.log(reviewForm);
 	};
 	const submitHundler = async (e) => {
 		console.log('heloo');
@@ -119,7 +179,8 @@ const Review = () => {
 			const reviewData = { ...reviewForm, rate };
 			const body = JSON.stringify(reviewData);
 			const res = await API.post('/review', body);
-			console.log(res.data);
+
+			setuserReviews({ reviews: res.data, loading: true });
 		} catch (error) {
 			console.log(error);
 		}
@@ -248,33 +309,38 @@ const Review = () => {
 						</div>
 					</div>
 				</div>
-				<div className='card mb-3' style={{ maxWidth: 610 }}>
-					<div className='row no-gutters'>
-						<div className='col-md-4'>
-							<img
-								src={profile.url}
-								className='card-img'
-								alt='...'
-							/>
-						</div>
-						<div className='col-md-8'>
-							<div className='card-body'>
-								<h5 className='card-title'>Card title</h5>
-								<p className='card-text'>
-									This is a wider card with supporting text
-									below as a natural lead-in to additional
-									content. This content is a little bit
-									longer.
-								</p>
-								<p className='card-text'>
-									<small className='text-muted'>
-										Last updated 3 mins ago
-									</small>
-								</p>
+
+				{userreviews.loading &&
+					userreviews.reviews.map((review) => (
+						<div className='card mb-3' style={{ maxWidth: 610 }}>
+							<div className='row no-gutters'>
+								<div className='col-md-4'>
+									<img
+										src={userProfile[review.rate - 1]}
+										className='card-img'
+										alt='...'
+									/>
+								</div>
+								<div className='col-md-8'>
+									<div className='card-body'>
+										<h5 className='card-title'>
+											{review.name}
+										</h5>
+										<p className='card-text'>
+											{review.review}
+										</p>
+										<p className='card-text'>
+											<small className='text-muted'>
+												Last updated 3 mins ago
+											</small>
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-				</div>
+					))}
+
+				{/* */}
 			</div>
 		</Fragment>
 	);

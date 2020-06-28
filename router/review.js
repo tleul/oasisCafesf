@@ -17,13 +17,15 @@ router.post('/', async (req, res) => {
 	db.review.push(data);
 	await fs.writeFile(fileName, JSON.stringify(db), function writeJSON(err) {
 		if (err) return console.log(err);
-		console.log(db);
+		const reviews = db.review;
+		const filterReview = reviews.filter((review) => review.rate > 3);
+		return res.json(filterReview);
 	});
 });
 router.get('/', (req, res) => {
 	const reviews = db.review;
 	const filterReview = reviews.filter((review) => review.rate > 3);
-	res.json(filterReview);
+	return res.json(filterReview);
 });
 
 module.exports = router;
