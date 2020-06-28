@@ -73,6 +73,7 @@ const Review = () => {
 				setemojie({ rate: rateNum, nice: 'scale(1.5)' });
 				makeProfile({ url: emojieCollection.nice, btn: btncolor.good });
 
+<<<<<<< HEAD
 				setrateColor({
 					tumbsdown: 'yellow',
 					sad: 'yellow',
@@ -80,6 +81,69 @@ const Review = () => {
 					nice: 'red',
 				});
 				break;
+=======
+              <div>
+                <div className="only-lg">
+                  <div className="btn-pad">
+                    <button
+                      type="button"
+                      onClick={(e) => submitHundler(e)}
+                      className={profile.btn}
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="only-mobile">
+                <div className="star-rate">
+                  <span
+                    style={{ color: rateColor.tumbsdown }}
+                    onMouseEnter={(e) => handleRate(e, 1)}
+                    onClick={(e) => handleRate(e, 1)}
+                    className="fa fa-star "
+                  ></span>
+                  <span
+                    style={{ color: rateColor.sad }}
+                    onMouseEnter={(e) => handleRate(e, 2)}
+                    onClick={(e) => handleRate(e, 2)}
+                    className="fa fa-star "
+                  ></span>
+                  <span
+                    style={{ color: rateColor.good }}
+                    onMouseEnter={(e) => handleRate(e, 3)}
+                    onClick={(e) => handleRate(e, 3)}
+                    className="fa fa-star "
+                  ></span>
+                  <span
+                    style={{ color: rateColor.nice }}
+                    onMouseEnter={(e) => handleRate(e, 4)}
+                    onClick={(e) => handleRate(e, 4)}
+                    className="fa fa-star"
+                  ></span>
+                  <span
+                    style={{ color: rateColor.exccellent }}
+                    onMouseEnter={(e) => handleRate(e, 5)}
+                    onClick={(e) => handleRate(e, 5)}
+                    className="fa fa-star"
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-8">
+              <div className="card-body">
+                <h5 className="card-title">Write Review</h5>
+                <input
+				  type="text"
+				  placeholder='For anonymous leave  it empty'
+                  className="form-control "
+                  id="validationServer01"
+                  name="name"
+                  onChange={(e) => onChangehundel(e)}
+                  value={name}
+                  required
+                />
+>>>>>>> bceac6184d456d010a82147e418d0ef0435e95ab
 
 			case 5:
 				setemojie({ rate: rateNum, exccellent: 'scale(1.5)' });
