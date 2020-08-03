@@ -4,10 +4,10 @@ const Starters = () => {
 	return (
 		<Fragment>
 			<div className='col-lg-4 col-md-6 special-grid lunch'>
-				<h1>FOUL</h1>
+				<h1>FOWL</h1>
 				<div className='gallery-single fix'>
 					<img
-						src='https://via.placeholder.com/800X480'
+						src='img/starters/fowll.jpg'
 						className='img-fluid'
 						alt='starterImages'
 					/>

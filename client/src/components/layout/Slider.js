@@ -8,8 +8,9 @@ const DummyCaption = ({ caption }) => (
 			position: 'absolute',
 			right: 100,
 			top: 250,
-			fontSize: 38,
-			color: 'white',
+
+			fontSize: 50,
+			color: '#88A550 ',
 			padding: 55,
 		}}>
 		{caption}
@@ -22,31 +23,27 @@ const ItemSlider = () => {
 			url: 'img/habesha/slide_one.png',
 
 			// (Optional) Set if you want to add any content on your slide
-			childrenElem: (
-				<DummyCaption caption='Enjoy Ethiopian and Ertrian cusine' />
-			),
+			childrenElem: <DummyCaption caption='' />,
 		},
 		{
 			url: 'img/habesha/slide_two.jpeg',
-			childrenElem: <DummyCaption caption='Best in town' />,
+			childrenElem: <DummyCaption caption='' />,
 		},
 		{
 			url: 'img/habesha/slide_three.jpg',
-			childrenElem: (
-				<DummyCaption caption='Enjoy our Delicious VegCombo' />
-			),
+			childrenElem: <DummyCaption caption='  ' />,
 		},
 		{
 			url: 'img/habesha/slide_five.jpg',
-			childrenElem: <DummyCaption caption='Caption 3' />,
+			childrenElem: <DummyCaption caption=' ' />,
 		},
 		{
 			url: 'img/habesha/slide_four.jpg',
-			childrenElem: <DummyCaption caption='Caption 3' />,
+			childrenElem: <DummyCaption caption=' ' />,
 		},
 	];
 	return (
-		<div className='Slide'>
+		<div style={{}} className='slide'>
 			<SmartSlider
 				autoSlide={true}
 				slides={slidesArray}

@@ -39,8 +39,9 @@ const Pasta = () => {
 					</div>
 				</div>{' '}
 			</div>
+
 			<div className='col-lg-4 col-md-6 special-grid lunch'>
-				<h1>La Traviata (Arrabbiata)</h1>
+				<h1>Arrabbiata</h1>
 				<div className='gallery-single fix'>
 					<img
 						src='img/pasta/alberta.jpg'
@@ -58,25 +59,7 @@ const Pasta = () => {
 				</div>{' '}
 			</div>
 			<div className='col-lg-4 col-md-6 special-grid lunch'>
-				<h1>La Traviata (Arrabbiata)</h1>
-				<div className='gallery-single fix'>
-					<img
-						src='img/pasta/alberta.jpg'
-						className='img-fluid'
-						alt='imagesDinner'
-					/>
-
-					<div className='why-text'>
-						<h4>
-							Homemade pasta cooked in freshly prepared spicy
-							tomato sauce. Garnished with basil.
-						</h4>
-						<h5>$13.95</h5>
-					</div>
-				</div>{' '}
-			</div>
-			<div className='col-lg-4 col-md-6 special-grid lunch'>
-				<h1>Pre-Pasta-Rous Pomodoro</h1>
+				<h1>Pasta Pomodoro</h1>
 				<div className='gallery-single fix'>
 					<img
 						src='img/pasta/prePastaRous.jpg'
@@ -114,7 +97,7 @@ const Pasta = () => {
 			</div>
 
 			<div className='col-lg-4 col-md-6 special-grid lunch'>
-				<h1> Pesto Lover</h1>
+				<h1> Pesto Pasta</h1>
 				<div className='gallery-single fix'>
 					<img
 						src='img/pasta/pesto.jpg'
@@ -136,7 +119,7 @@ const Pasta = () => {
 				<h1> Monday's Special Lasagne</h1>
 				<div className='gallery-single fix'>
 					<img
-						src='https://via.placeholder.com/800X480'
+						src='img/pasta/lasagna.jpg'
 						className='img-fluid'
 						alt='imagesDinner'
 					/>
@@ -155,7 +138,7 @@ const Pasta = () => {
 				<h1> Legal Marinara (Veggie Marinara)</h1>
 				<div className='gallery-single fix'>
 					<img
-						src='https://via.placeholder.com/800X480'
+						src='img/pasta/veggie-marinara.jpg'
 						className='img-fluid'
 						alt='imagesDinner'
 					/>
@@ -174,7 +157,7 @@ const Pasta = () => {
 				<h1> Ciao-dy Pardner (Bolognese)</h1>
 				<div className='gallery-single fix'>
 					<img
-						src='https://via.placeholder.com/800X480'
+						src='img/pasta/bolo.jpg'
 						className='img-fluid'
 						alt='imagesDinner'
 					/>
@@ -193,7 +176,7 @@ const Pasta = () => {
 				<h1> Unbeleavable (Ravioli)</h1>
 				<div className='gallery-single fix'>
 					<img
-						src='https://via.placeholder.com/800X480'
+						src='img/pasta/ravioli.jpg'
 						className='img-fluid'
 						alt='imagesDinner'
 					/>

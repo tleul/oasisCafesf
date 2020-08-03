@@ -1,20 +1,26 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import Review from './Review';
 
 const About = () => {
 	return (
 		<Fragment>
 			<br />
-			<b>
-				<br />
-			</b>
+
+			<br />
+			<br />
+
+			<br />
+			<br />
+
+			<br />
 
 			<div className='about-section-box'>
 				<div className='container'>
 					<div className='row'>
 						<div className='col-lg-6 col-md-6 col-sm-12'>
 							<img
-								src='img/habesha/about.jpg'
+								src='img/wallpaper/osone.jpeg'
 								alt=''
 								className='img-fluid'
 							/>
@@ -45,6 +51,7 @@ const About = () => {
 								</Link>
 							</div>
 						</div>
+						<Review />
 					</div>
 				</div>
 			</div>

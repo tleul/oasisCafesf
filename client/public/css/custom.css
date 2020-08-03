@@ -19,3 +19,50 @@
 	box-shadow: 0 5px #666;
 	transform: translateY(10px);
 }
+.oasis-top {
+	background-color: #db4437;
+	font-size: 2rem;
+	text-align: center;
+	width: auto;
+	margin-top: 3rem;
+}
+.oasis-top .flag {
+	width: 5rem;
+}
+.oasis-top h1 {
+	font-size: 2rem;
+}
+.menu-box button {
+	background-color: #df2d0c;
+	border: solid darkgreen;
+	color: white;
+}
+.menu-box button:focus {
+	background-color: white;
+	content: 'Enjoy ';
+}
+#error {
+	color: red;
+	font-size: 2em;
+}
+.menu-box .flash {
+	color: red;
+	font-weight: bold;
+	text-decoration: underline;
+
+	animation-name: blinker;
+	animation-duration: 0.7s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes blinker {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

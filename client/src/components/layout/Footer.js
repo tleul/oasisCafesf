@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 const Footer = () => {
 	return (
@@ -117,9 +117,9 @@ const Footer = () => {
 								<p className='company-name'>
 									All Rights Reserved. &copy; 2020{' '}
 									<Link to='/'>Oasis Cafe</Link> Design By :
-									<Link to='/developer'>
+									<a href='https://www.tafachtech.com'>
 										LeulT|contact developer
-									</Link>
+									</a>
 								</p>
 							</div>
 						</div>

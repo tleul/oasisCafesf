@@ -1,6 +1,19 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
+
+import API from '../../api/api';
 
 const Contact = () => {
+	useEffect(() => {
+		getMessages();
+	}, []);
+	const getMessages = async () => {
+		const messages = await API.get('/getmesssage');
+
+		setmsgdata(messages.data);
+	};
+	const [msgdata, setmsgdata] = useState({});
+	const [msg, setMsg] = useState({});
+
 	const [contactForm, setcontactform] = useState({
 		name: '',
 		email: '',
@@ -37,18 +50,28 @@ const Contact = () => {
 
 		setcontactform({ ...contactForm, [e.target.name]: e.target.value });
 	};
-	const sendEmail = (e) => {
+
+	const sendEmail = async (e) => {
 		e.preventDefault();
-		console.log(errors);
+		const body = JSON.stringify(contactForm);
+		const data = await API.post('/emailsend', body);
+		// setMsg(data.data);
+
+		setmsgdata(data.data);
+		setInterval(() => {
+			setMsg({});
+		}, 10000);
+		console.log(msg);
 	};
+	console.log(msgdata);
 
 	return (
 		<Fragment>
-			{/* <div className='all-page-title page-breadcrumb'>
+			<div className='all-page-title page-breadcrumb'>
 				<div className='container text-center'>
 					<div className='row'></div>
 				</div>
-			</div> */}
+			</div>
 			<br />
 			<br />
 			<br />
@@ -65,6 +88,10 @@ const Contact = () => {
 									welcome to assist you!!
 								</p>
 							</div>
+
+							<div className='menu-box'>
+								<p className='flash' id='error'></p>
+							</div>
 						</div>
 					</div>
 					<div className='row'>
@@ -73,6 +100,11 @@ const Contact = () => {
 								<div className='row'>
 									<div className='col-md-12'>
 										<div className='form-group'>
+											<div className='help-block with-errors'>
+												<h1 style={{ color: 'red' }}>
+													{msg && msg.msg}
+												</h1>
+											</div>
 											<input
 												type='text'
 												className='form-control'
@@ -138,6 +170,7 @@ const Contact = () => {
 												type='submit'>
 												Send Message
 											</button>
+
 											<div
 												id='msgSubmit'
 												className='h3 text-center hidden'></div>

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-const Lunch = () => {
+const Enteries = () => {
 	return (
 		<Fragment>
 			<div className='col-lg-4 col-md-6 special-grid lunch'>
@@ -138,4 +138,4 @@ const Lunch = () => {
 		</Fragment>
 	);
 };
-export default Lunch;
+export default Enteries;

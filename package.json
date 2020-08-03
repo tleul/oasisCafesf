@@ -4,8 +4,12 @@
 	"description": "Oasis Cafe SF",
 	"main": "server.js",
 	"dependencies": {
+		"concurrently": "^5.2.0",
 		"express": "^4.17.1",
-		"nodemailer": "^6.4.8"
+		"node-cron": "^2.0.3",
+		"nodemailer": "^6.4.10",
+		"nodemon": "^2.0.4",
+		"uuid": "^8.2.0"
 	},
 	"devDependencies": {},
 	"scripts": {

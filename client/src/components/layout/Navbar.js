@@ -9,11 +9,23 @@ const Navbar = () => {
 					<div className='container'>
 						<Link className='navbar-brand' to='/'>
 							<img
-								style={{ height: 60, width: 100 }}
+								style={{ height: 15, width: 30 }}
+								src='img/ehiopian-flag.jpg'
+								alt=''
+							/>
+							<img
+								style={{ height: 100, width: 100 }}
 								src='img/logo192.png'
 								alt=''
 							/>
+							<img
+								style={{ height: 15, width: 30 }}
+								src='img/eritrea-flag.jpg'
+								alt=''
+							/>
 						</Link>
+
+						<br />
 						<button
 							className='navbar-toggler'
 							type='button'
@@ -44,49 +56,6 @@ const Navbar = () => {
 									</Link>
 								</li>
 
-								{/* <div
-										className='dropdown-menu'
-										aria-labelledby='dropdown-a'>
-										<Link
-											className='dropdown-item'
-											to='/menuone'>
-											Menu One
-										</Link>
-										<Link
-											className='dropdown-item'
-											to='/menutwo'>
-											Menu Two
-										</Link>
-										<Link
-											className='dropdown-item'
-											to='gallery.html'>
-											Gallery
-										</Link>
-									</div> */}
-
-								{/* <li className='nav-item dropdown'>
-									<Link
-										className='nav-link dropdown-toggle'
-										to='#'
-										id='dropdown-a'
-										data-toggle='dropdown'>
-										Blog
-									</Link>
-									<div
-										className='dropdown-menu'
-										aria-labelledby='dropdown-a'>
-										<Link
-											className='dropdown-item'
-											to='blog.html'>
-											blog
-										</Link>
-										<Link
-											className='dropdown-item'
-											to='blog-details.html'>
-											blog Single
-										</Link>
-									</div>
-								</li> */}
 								<li className='nav-item'>
 									<Link className='nav-link' to='/contact'>
 										Contact
