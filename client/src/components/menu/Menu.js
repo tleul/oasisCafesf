@@ -170,7 +170,7 @@ const Menu = () => {
 											src='img/pasta/pasta.svg'
 											alt=''
 										/>
-										&nbsp; Pre-Pasta-Rous
+										&nbsp; Pasta Menu
 									</button>
 									<button onClick={(e) => american(e)}>
 										<img
@@ -205,6 +205,9 @@ const Menu = () => {
 												order <br />
 												- All injera (flat bread) is
 												gluten-free <br />
+												- All Vegetarian is complete
+												Vegan
+												<br />
 											</strong>{' '}
 										</h1>
 									</Fragment>
